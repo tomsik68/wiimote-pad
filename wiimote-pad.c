@@ -386,7 +386,7 @@ glob_t js_devs;
 static void destroy_all_devs(void) {
 	int j;
 	for (j = 0; j < MAX_WIIMOTES; ++j) {
-		dev_destroy(dev);
+		dev_destroy(&dev[j]);
 	}
 	globfree(&js_devs);
 }
