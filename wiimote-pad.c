@@ -154,7 +154,7 @@ void dev_init(struct wiimote_dev const *dev) {
 	iev[15].type = EV_SYN;
 	iev[15].code = iev[15].value = 0;
 
-	snprintf(padmode.name, UINPUT_MAX_NAME_SIZE, XWII_NAME_CORE " in gamepad mode");
+	snprintf(padmode.name, UINPUT_MAX_NAME_SIZE, XWII_NAME_CORE "(pad)");
 	padmode.id.bustype = BUS_VIRTUAL;
 	/*
 	padmode.id.vendor = 0;
